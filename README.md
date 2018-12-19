@@ -11,24 +11,21 @@ Control your rtl sdr dongle and listen to fm radio with snips
 
 ## Requirements
 
-The app use `rtl_fm` to access the radio:
+The app use `rtl_fm` to access the radio, install the rtl-sdr tool:
 
 ```bash
-# install the rtl-sdr tool
 sudo apt-get install rtl-sdr
 ```
 
 The app must access the usb rtl_sdr dongle:
 
 ```
-# grant access to the usb dongle and audio to the skill server
 sudo usermod -a -G plugdev _snips-skills
 ```
 
 If you use `pulseaudio` the app must have access to pulseaudio:
 
 ```
-# grant access to the usb dongle and audio to the skill server
 sudo usermod -a -G pulse-access _snips-skills
 ```
 
